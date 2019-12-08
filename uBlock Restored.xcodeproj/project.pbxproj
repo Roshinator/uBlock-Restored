@@ -22,6 +22,10 @@
 		98E811ED239CD7AD00ED95B6 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 98E811EB239CD7AD00ED95B6 /* SafariExtensionViewController.xib */; };
 		98E811F0239CD7AD00ED95B6 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 98E811EF239CD7AD00ED95B6 /* script.js */; };
 		98E811F2239CD7AD00ED95B6 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 98E811F1239CD7AD00ED95B6 /* ToolbarItemIcon.pdf */; };
+		98E81208239CD88D00ED95B6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E811E2239CD7AD00ED95B6 /* Cocoa.framework */; };
+		98E8120B239CD88D00ED95B6 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 98E8120A239CD88D00ED95B6 /* blockerList.json */; };
+		98E8120E239CD88D00ED95B6 /* ContentBlockerRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 98E8120D239CD88D00ED95B6 /* ContentBlockerRequestHandler.m */; };
+		98E81213239CD88D00ED95B6 /* uBlock Restored Content Blocker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 98E81207239CD88D00ED95B6 /* uBlock Restored Content Blocker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,13 @@
 			remoteGlobalIDString = 98E811DC239CD7AD00ED95B6;
 			remoteInfo = "uBlock Restored Extension";
 		};
+		98E81211239CD88D00ED95B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98E811A8239CD7AC00ED95B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98E81206239CD88D00ED95B6;
+			remoteInfo = "uBlock Restored Content Blocker";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +66,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				98E81213239CD88D00ED95B6 /* uBlock Restored Content Blocker.appex in Embed App Extensions */,
 				98E811DE239CD7AD00ED95B6 /* uBlock Restored Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -90,6 +102,12 @@
 		98E811EF239CD7AD00ED95B6 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		98E811F1239CD7AD00ED95B6 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		98E811F3239CD7AD00ED95B6 /* uBlock_Restored_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uBlock_Restored_Extension.entitlements; sourceTree = "<group>"; };
+		98E81207239CD88D00ED95B6 /* uBlock Restored Content Blocker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "uBlock Restored Content Blocker.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98E8120A239CD88D00ED95B6 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		98E8120C239CD88D00ED95B6 /* ContentBlockerRequestHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentBlockerRequestHandler.h; sourceTree = "<group>"; };
+		98E8120D239CD88D00ED95B6 /* ContentBlockerRequestHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentBlockerRequestHandler.m; sourceTree = "<group>"; };
+		98E8120F239CD88D00ED95B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98E81210239CD88D00ED95B6 /* uBlock_Restored_Content_Blocker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = uBlock_Restored_Content_Blocker.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +140,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98E81204239CD88D00ED95B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98E81208239CD88D00ED95B6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -132,6 +158,7 @@
 				98E811CA239CD7AD00ED95B6 /* uBlock RestoredTests */,
 				98E811D5239CD7AD00ED95B6 /* uBlock RestoredUITests */,
 				98E811E4239CD7AD00ED95B6 /* uBlock Restored Extension */,
+				98E81209239CD88D00ED95B6 /* uBlock Restored Content Blocker */,
 				98E811E1239CD7AD00ED95B6 /* Frameworks */,
 				98E811B1239CD7AC00ED95B6 /* Products */,
 			);
@@ -144,6 +171,7 @@
 				98E811C7239CD7AD00ED95B6 /* uBlock RestoredTests.xctest */,
 				98E811D2239CD7AD00ED95B6 /* uBlock RestoredUITests.xctest */,
 				98E811DD239CD7AD00ED95B6 /* uBlock Restored Extension.appex */,
+				98E81207239CD88D00ED95B6 /* uBlock Restored Content Blocker.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,6 +234,18 @@
 			path = "uBlock Restored Extension";
 			sourceTree = "<group>";
 		};
+		98E81209239CD88D00ED95B6 /* uBlock Restored Content Blocker */ = {
+			isa = PBXGroup;
+			children = (
+				98E8120A239CD88D00ED95B6 /* blockerList.json */,
+				98E8120C239CD88D00ED95B6 /* ContentBlockerRequestHandler.h */,
+				98E8120D239CD88D00ED95B6 /* ContentBlockerRequestHandler.m */,
+				98E8120F239CD88D00ED95B6 /* Info.plist */,
+				98E81210239CD88D00ED95B6 /* uBlock_Restored_Content_Blocker.entitlements */,
+			);
+			path = "uBlock Restored Content Blocker";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,6 +262,7 @@
 			);
 			dependencies = (
 				98E811E0239CD7AD00ED95B6 /* PBXTargetDependency */,
+				98E81212239CD88D00ED95B6 /* PBXTargetDependency */,
 			);
 			name = "uBlock Restored";
 			productName = "uBlock Restored";
@@ -281,6 +322,23 @@
 			productReference = 98E811DD239CD7AD00ED95B6 /* uBlock Restored Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		98E81206239CD88D00ED95B6 /* uBlock Restored Content Blocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98E81214239CD88D00ED95B6 /* Build configuration list for PBXNativeTarget "uBlock Restored Content Blocker" */;
+			buildPhases = (
+				98E81203239CD88D00ED95B6 /* Sources */,
+				98E81204239CD88D00ED95B6 /* Frameworks */,
+				98E81205239CD88D00ED95B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "uBlock Restored Content Blocker";
+			productName = "uBlock Restored Content Blocker";
+			productReference = 98E81207239CD88D00ED95B6 /* uBlock Restored Content Blocker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -304,6 +362,9 @@
 					98E811DC239CD7AD00ED95B6 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
+					98E81206239CD88D00ED95B6 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 98E811AB239CD7AC00ED95B6 /* Build configuration list for PBXProject "uBlock Restored" */;
@@ -323,6 +384,7 @@
 				98E811C6239CD7AD00ED95B6 /* uBlock RestoredTests */,
 				98E811D1239CD7AD00ED95B6 /* uBlock RestoredUITests */,
 				98E811DC239CD7AD00ED95B6 /* uBlock Restored Extension */,
+				98E81206239CD88D00ED95B6 /* uBlock Restored Content Blocker */,
 			);
 		};
 /* End PBXProject section */
@@ -359,6 +421,14 @@
 				98E811F2239CD7AD00ED95B6 /* ToolbarItemIcon.pdf in Resources */,
 				98E811ED239CD7AD00ED95B6 /* SafariExtensionViewController.xib in Resources */,
 				98E811F0239CD7AD00ED95B6 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98E81205239CD88D00ED95B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98E8120B239CD88D00ED95B6 /* blockerList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +470,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98E81203239CD88D00ED95B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98E8120E239CD88D00ED95B6 /* ContentBlockerRequestHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -417,6 +495,11 @@
 			isa = PBXTargetDependency;
 			target = 98E811DC239CD7AD00ED95B6 /* uBlock Restored Extension */;
 			targetProxy = 98E811DF239CD7AD00ED95B6 /* PBXContainerItemProxy */;
+		};
+		98E81212239CD88D00ED95B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98E81206239CD88D00ED95B6 /* uBlock Restored Content Blocker */;
+			targetProxy = 98E81211239CD88D00ED95B6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -689,6 +772,40 @@
 			};
 			name = Release;
 		};
+		98E81215239CD88D00ED95B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "uBlock Restored Content Blocker/uBlock_Restored_Content_Blocker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "uBlock Restored Content Blocker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.roshansevalia.uBlock-Restored.uBlock-Restored-Content-Blocker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		98E81216239CD88D00ED95B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "uBlock Restored Content Blocker/uBlock_Restored_Content_Blocker.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "uBlock Restored Content Blocker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.roshansevalia.uBlock-Restored.uBlock-Restored-Content-Blocker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -733,6 +850,15 @@
 			buildConfigurations = (
 				98E81201239CD7AD00ED95B6 /* Debug */,
 				98E81202239CD7AD00ED95B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98E81214239CD88D00ED95B6 /* Build configuration list for PBXNativeTarget "uBlock Restored Content Blocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98E81215239CD88D00ED95B6 /* Debug */,
+				98E81216239CD88D00ED95B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
